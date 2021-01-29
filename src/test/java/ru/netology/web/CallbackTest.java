@@ -27,7 +27,7 @@ class CallbackTest {
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
         WebDriverManager.getInstance(CHROME).setup();
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
     }
 
     @AfterEach
