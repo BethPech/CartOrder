@@ -26,7 +26,7 @@ class CallbackTest {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
-        WebDriverManager.getInstance(CHROME).setup();
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(options);
     }
 
